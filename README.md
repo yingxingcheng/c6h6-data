@@ -97,7 +97,7 @@ Each function is designed to be used with different types of density data (e.g.,
 
 ### Execution
 
-To use the `make_plot.py` script, the user should call the script from the command line or within a Python environment. Each function can be executed individually based on the required visualization, handling the data extraction and plotting in a seamless manner. The script automates the creation of PDF files for each plot type, facilitating easy sharing and documentation of the results.
+To use the `make_plot.py` script, the user should call the script from the command line or within a Python environment. Each function can be executed individually based on the required visualization, handling the data extraction and plotting in a seamless manner. The script automates the creation of SVG files for each plot type, facilitating easy sharing and documentation of the results.
 
 The script uses a structured approach to manage the complexities of data handling and visualization, making it accessible for users familiar with Python and data visualization techniques.
 
