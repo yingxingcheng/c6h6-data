@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 
-import os
-import numpy as np
+
 import matplotlib.pyplot as plt
+import numpy as np
 
 """
 The script is to show how to use the data generated form `Part-Cube` program.
@@ -16,7 +16,8 @@ def load_data(dens_type):
     Parameters
     ----------
     dens_type : str
-        The key within the .npz file to load. Expected keys include "density" and "isolated_density".
+        The key within the .npz file to load. Expected keys include "density" and
+        "isolated_density".
 
     Returns
     -------
@@ -118,8 +119,7 @@ def plot_contour(dens_type):
     X = x.reshape((shape[0], shape[1]))
     Y = y.reshape((shape[0], shape[1]))
     levels = np.linspace(0, 25, 2000)
-    cax = plt.contour(X, Y, Z, levels=levels, linewidths=0.5)
-    # cbar = fig.colorbar(cax, ax=ax, fraction=0.04, pad=0.04)
+    plt.contour(X, Y, Z, levels=levels, linewidths=0.5)
     plt.xlabel("x-axis")
     plt.ylabel("y-axis")
     plt.tight_layout()
