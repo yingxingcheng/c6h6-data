@@ -60,7 +60,7 @@ def plot_scatter(dens_type):
 
     Notes
     -----
-    The output scatter plot is saved as a PDF file named `c6h6_scatter_{dens_type}.pdf`.
+    The output scatter plot is saved as a SVG file named `c6h6_scatter_{dens_type}.svg`.
     """
     x, y, dens, _ = load_data(dens_type)
     fig, ax = plt.subplots(figsize=(4, 4))
@@ -69,7 +69,7 @@ def plot_scatter(dens_type):
     plt.xlabel("X")
     plt.ylabel("Y")
     plt.tight_layout()
-    plt.savefig(f"c6h6_scatter_{dens_type}.pdf")
+    plt.savefig(f"c6h6_scatter_{dens_type}.svg")
 
 
 def plot_matshow(dens_tyep):
@@ -83,7 +83,7 @@ def plot_matshow(dens_tyep):
 
     Notes
     -----
-    The output matrix plot is saved as a PDF file named `c6h6_matshow_{dens_type}.pdf`.
+    The output matrix plot is saved as a SVG file named `c6h6_matshow_{dens_type}.svg`.
     """
     _, _, dens, shape = load_data(dens_type)
     fig, ax = plt.subplots(figsize=(6, 4))
@@ -96,7 +96,7 @@ def plot_matshow(dens_tyep):
     plt.xlabel("X-axis")
     plt.ylabel("Y-axis")
     plt.tight_layout()
-    plt.savefig(f"c6h6_matshow_{dens_type}.pdf")
+    plt.savefig(f"c6h6_matshow_{dens_type}.svg")
 
 
 def plot_contour(dens_type):
@@ -110,7 +110,7 @@ def plot_contour(dens_type):
 
     Notes
     -----
-    The output contour plot is saved as a PDF file named `c6h6_contour_{dens_type}.pdf`.
+    The output contour plot is saved as a SVG file named `c6h6_contour_{dens_type}.svg`.
     """
     x, y, dens, shape = load_data(dens_type)
     fig, ax = plt.subplots(figsize=(4, 4))
@@ -123,7 +123,7 @@ def plot_contour(dens_type):
     plt.xlabel("x-axis")
     plt.ylabel("y-axis")
     plt.tight_layout()
-    plt.savefig(f"c6h6_contour_{dens_type}.pdf")
+    plt.savefig(f"c6h6_contour_{dens_type}.svg")
 
 
 if __name__ == "__main__":
